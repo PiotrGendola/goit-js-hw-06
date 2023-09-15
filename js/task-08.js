@@ -7,9 +7,9 @@ registerForm.addEventListener("submit", (event) => {
   const password = form.elements.password.value;
 
   if (login === "" || password === "") {
-    return console.log("Proszę wypełnić wszystkie pola!");
+    return alert("Proszę wypełnić wszystkie pola!");
   }
 
-  console.log(`Login: ${login}, Password: ${password}`);
+  alert(`Login: ${login}, Password: ${password}`);
   form.reset();
 });

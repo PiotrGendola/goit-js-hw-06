@@ -8,6 +8,9 @@ const bodyColor = document.querySelector("body");
 const viewColor = document.querySelector("span.color");
 const buttonChangeColor = document.querySelector("button.change-color");
 
+viewColor.textContent = getRandomHexColor();
+bodyColor.style.backgroundColor = viewColor.textContent;
+
 buttonChangeColor.addEventListener("click", () => {
   const color = getRandomHexColor();
   viewColor.textContent = color;

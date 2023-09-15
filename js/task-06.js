@@ -1,5 +1,4 @@
 const inputText = document.querySelector("input#validation-input");
-const inputValidColor = document.querySelector("input#validation-input.valid");
 const validLength = parseInt(inputText.getAttribute("data-length"));
 
 inputText.addEventListener("blur", (event) => {
